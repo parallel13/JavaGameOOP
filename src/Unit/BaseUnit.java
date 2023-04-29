@@ -1,6 +1,8 @@
 package Unit;
 
-public class BaseUnit {
+import java.util.Arrays;
+
+public abstract class BaseUnit implements GameInterface {
     protected String name;
     protected String family;
     protected int healthPoint;
@@ -25,9 +27,7 @@ public class BaseUnit {
     void await(){
 
     }
-    void step(){
 
-    }
     void defend(){
 
     }
@@ -60,5 +60,16 @@ public class BaseUnit {
 
     public float getLuck() {
         return luck;
+    }
+
+    @Override
+    public String getInfo() {
+        return  "{, name='" + name + '\'' +
+                ", family='" + family + '\'' +
+                ", healthPoint=" + healthPoint +
+                ", damage=" + Arrays.toString(damage) +
+                ", armor=" + armor +
+                ", speed=" + speed +
+                ", luck=" + luck;
     }
 }

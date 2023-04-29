@@ -2,7 +2,7 @@ package Unit;
 
 import java.util.Arrays;
 
-public class Shooter extends BaseUnit{
+public abstract class Shooter extends BaseUnit{
     int distanceShoot;
     int maxCountBullet, currentCountBullet;
     protected float accuracy;
@@ -18,21 +18,12 @@ public class Shooter extends BaseUnit{
 
     }
 
+
+
     @Override
-    public String toString() {
-        return "Shooter{" +
-                ", name='" + name + '\'' +
-                ", family='" + family + '\'' +
-                "distanceShoot=" + distanceShoot +
-                ", maxCountBullet=" + maxCountBullet +
-                ", currentCountBullet=" + currentCountBullet +
-                ", accuracy=" + accuracy +
-                ", healthPoint=" + healthPoint +
-                ", damage=" + Arrays.toString(damage) +
-                ", armor=" + armor +
-                ", speed=" + speed +
-                ", luck=" + luck +
-                '}';
+    public String getInfo() {
+        return super.getInfo()+ ", distanceShoot=" + distanceShoot +", maxCountBullet=" + maxCountBullet +
+                ", currentCountBullet=" + currentCountBullet +", accuracy=" + accuracy+"}";
     }
 
     public int getDistanceShoot() {

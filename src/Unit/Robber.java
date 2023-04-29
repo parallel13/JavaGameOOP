@@ -6,24 +6,9 @@ public class Robber extends Fighter{
                 0.7f);
     }
 
-//    @Override
-//    public String toString() {
-//        return "Robber{" +
-//                ", name='" + name + '\'' +
-//                ", family='" + family + '\'' +
-//                "attackLength=" + attackLength +
-//                ", chanceOfDodging=" + chanceOfDodging +
-//                ", healthPoint=" + healthPoint +
-//                ", damage=" + Arrays.toString(damage) +
-//                ", armor=" + armor +
-//                ", speed=" + speed +
-//                ", luck=" + luck +
-//                '}';
-//    }
-@Override
-public String toString() {
-    return "Robber{" +
-            ", name='" + name + '\'' +
-            ", family='" + family + '\''+'}';
-}
+
+    @Override
+    public void step() {
+
+    }
 }
