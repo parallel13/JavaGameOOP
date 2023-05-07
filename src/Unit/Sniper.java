@@ -1,16 +1,13 @@
 package Unit;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
-public class Sniper extends Shooter {
-public Sniper(String name){
-    super(name, "Sniper", 30, new int[]{10,15}, 10, 20, 0.8f, 50,
+public class Sniper extends ShooterUnits {
+public Sniper(String name, ArrayList<BaseUnit> team){
+    super(name, "Sniper", 30,30, 10, 10, 20, 0.8f,team, 50,
             30, 30,0.9f);
     }
 
 
-    @Override
-    public void step() {
 
-    }
 }

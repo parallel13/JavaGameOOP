@@ -1,15 +1,15 @@
 package Unit;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 
-public abstract class Fighter extends BaseUnit {
+public abstract class FighterUnits extends BaseUnit {
     protected int attackLength;
     protected float chanceOfDodging;
 
 
-    public Fighter(String name, String family, int healthPoint, int[] damage, int armor, int speed, float luck,
-                   int attackLength, float chanceOfDodging) {
-        super(name, family, healthPoint, damage, armor, speed, luck);
+    public FighterUnits(String name, String family, float healthPoint, float maxHealthPoint, int attack, int armor, int speed, float luck,
+                        ArrayList<BaseUnit> team, int attackLength, float chanceOfDodging) {
+        super(name, family, healthPoint, maxHealthPoint, attack, armor, speed, luck, team);
         this.attackLength = attackLength;
         this.chanceOfDodging = chanceOfDodging;
     }

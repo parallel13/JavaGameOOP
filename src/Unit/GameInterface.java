@@ -1,8 +1,9 @@
 package Unit;
 
-public interface GameInterface {
-    void step();
+import java.util.ArrayList;
 
+public interface GameInterface {
+    void step(ArrayList<BaseUnit> enemy);
     String getInfo();
 
 }

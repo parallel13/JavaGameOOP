@@ -1,14 +1,12 @@
 package Unit;
 
-public class Magician extends Magic{
-    public Magician(String name){
-        super(name, "Magician", 30, new int[]{40,50}, 5, 5, 0.9f, 30,20);
-    }
+import java.util.ArrayList;
 
-    @Override
-    public void step() {
-
+public class Magician extends MagicUnits {
+    public Magician(String name, ArrayList<BaseUnit> team){
+        super(name, "Magician", 30,30, 20, 5, 5, 0.9f, team,20, 20, 20);
     }
+//    name, family, healthPoint, maxHealthPoint, damage, armor, speed, luck, team
 
 
 }
